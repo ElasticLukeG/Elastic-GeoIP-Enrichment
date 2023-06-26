@@ -45,7 +45,7 @@ Disable the logstash database auto-update feature:
 
 Disable the elasticsearch database auto-update feature using the [cluster update API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cluster-update-settings.html):
 
-- Set the `xpack.geoip.downloader.enabled` value to `false` in `logstash.yml`.
+- Set the `ingest.geoip.downloader.enabled` value to `false` in `elasticsearch.yml`.
 
 ## Create a custom endpoint to host and update the database
 
