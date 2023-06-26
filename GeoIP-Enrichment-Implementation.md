@@ -74,7 +74,7 @@ docker run -v my/source/dir:/usr/share/nginx/html:ro nginx
 
 ## Specify the service's endpoint URL
 
-**Logstash settings**
+**Logstash settings:**
 
 Using the `xpack.geoip.download.endpoint=http://localhost:8080/overview.json` setting in `logstash.yml`.
 
@@ -96,16 +96,14 @@ Determine what log source to GeoIP enrich and click the associated "enabled by" 
 
 ## Enrichment Table
 
-|---------------------------------------|
-|LOG SOURCE		| ENABLED BY (click)	|
-|---------------------------------------|
-|Logstash		| Using GeoIP Filter	|
-|Filebeat		| Using GeoIP Processor	|
-|Indexes		| Processor + Pipeline	|
-|Index Templates| Processor + Pipeline	|
-|Beats			| Processor + Pipeline	|
-|---------------------------------------|
-
+| LOG SOURCE      | ENABLED BY (click)                                                   |
+|-----------------|----------------------------------------------------------------------|
+| Logstash        | [Using GeoIP Filter](#using-geoip-filter)                            |
+| Filebeat        | [Using GeoIP Processor](#using-geoip-processor)                      |
+| Packetbeat      | [Using GeoIP Processor](#using-geoip-processor)                      |
+| Indexes         | [Using GeoIP Processor + Pipeline](#using-geoip-processor--pipeline) |
+| Index Templates | [Using GeoIP Processor + Pipeline](#using-geoip-processor--pipeline) |
+| Beats           | [Using GeoIP Processor + Pipeline](#using-geoip-processor--pipeline) |
 
 # PHASE #3: Configuring GeoIP Enrichment for your log sources
 
