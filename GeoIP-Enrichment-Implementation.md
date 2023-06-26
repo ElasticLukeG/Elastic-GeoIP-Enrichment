@@ -191,17 +191,7 @@ If your use case involves using Logstash, you can use the GeoIP filter available
 
 **Description:**
 
-PENDING
-
-**Reference Documentation:**
-
-PENDING
-
----
-
-### Indexes: Geo Enrichment with GeoIP Pipeline
-
-**Description:**
+Geo Enrichment with GeoIP Pipeline.
 
 You can set a default or final pipeline to a given ingested index or index template...
 
