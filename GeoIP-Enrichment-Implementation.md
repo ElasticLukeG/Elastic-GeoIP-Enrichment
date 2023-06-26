@@ -25,7 +25,15 @@
 
 ## Overview
 
-CONTENT PENDING
+An important point in monitoring devices, applications or systems exposed on the internet, is to include information about the origin of the requests or attempts we receive.
+
+This is useful on both the infrastructure and security side as well as the business side. 
+
+For example, knowing the origin and number of requests or attempts, we can better plan the geographic distribution of servers, detect compromised credentials or attack attempts and identify new business opportunities in different locations.
+
+This document's purpose is to provide a general outline of the phases required to GeoIP enrich Elastic data in an air-gapped environment.
+
+There a multiple different ways to achieve this data enrichment depending on the data/log source. The information outlined in Phase #1 & 2 apply to all enrichment regardless of data source. The information in Phase #3 is divided up to cover each of the major data source options.
 
 # PHASE #1: Creating a custom endpoint to host your own database
 
