@@ -211,7 +211,7 @@ You can set a default or final pipeline to a given ingested index or index templ
 
 ---
 
-### Index - Default Pipeline
+### Index: Default Pipeline
 Use the index.default_pipeline index setting to set a default pipeline. 
 
 Elasticsearch applies this pipeline to indexing requests if no pipeline parameter is specified.
@@ -226,7 +226,7 @@ Elasticsearch applies this pipeline to indexing requests if no pipeline paramete
 
 ---
 
-### Index - Final Pipeline	
+### Index: Final Pipeline	
 
 **Description**
 
