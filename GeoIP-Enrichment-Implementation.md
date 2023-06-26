@@ -189,17 +189,24 @@ If your use case involves using Logstash, you can use the GeoIP filter available
 
 **Description:**
 
-Geo Enrichment with GeoIP Pipeline.
+Geo Enrichment with GeoIP Pipeline policy.
 
-You can set a default or final pipeline to a given ingested index or index template...
+You can also apply `geo_match` [enrich policies](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest-enriching-data.html#enrich-policy) match enrich data to incoming documents based on a geographic location, using a [`geo_shape` query`](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-shape-query.html).
+
+The following example creates a `geo_match` enrich policy that adds postal codes to incoming documents based on a set of coordinates. It then adds the `geo_match` enrich policy to a processor in an ingest pipeline.
+
+Use the [create index API](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-create-index.html) to create a source index containing at least one `geo_shape` field.
 
 **Reference Documentation:**
 
 [Elastic - Ingest Pipelines](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html)
 
+[Elastic - Example: Enrich your data based on geolocation](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-match-enrich-policy-type.html)
+
 ---
 
 ### Index: Default Pipeline
+
 Use the index.default_pipeline index setting to set a default pipeline. 
 
 Elasticsearch applies this pipeline to indexing requests if no pipeline parameter is specified.
